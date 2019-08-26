@@ -158,28 +158,28 @@ public class SectorMenuButton extends View implements ValueAnimator.AnimatorUpda
 
         //得到XML自定义属性
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.SectorMenuButton);
-        startAngle = ta.getInteger(R.styleable.SectorMenuButton_aebStartAngleDegree, DEFAULT_START_ANGLE);
-        endAngle = ta.getInteger(R.styleable.SectorMenuButton_aebEndAngleDegree, DEFAULT_END_ANGLE);
+        startAngle = ta.getInteger(R.styleable.SectorMenuButton_wStartAngleDegree, DEFAULT_START_ANGLE);
+        endAngle = ta.getInteger(R.styleable.SectorMenuButton_wEndAngleDegree, DEFAULT_END_ANGLE);
 
-        buttonGapPx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_aebButtonGapDp, dp2px(context, DEFAULT_BUTTON_GAP_DP));
-        mainButtonSizePx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_aebMainButtonSizeDp, dp2px(context, DEFAULT_BUTTON_MAIN_SIZE_DP));
-        subButtonSizePx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_aebSubButtonSizeDp, dp2px(context, DEFAULT_BUTTON_SUB_SIZE_DP));
-        buttonElevationPx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_aebButtonElevation, dp2px(context, DEFAULT_BUTTON_ELEVATION_DP));
+        buttonGapPx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_wButtonGapDp, dp2px(context, DEFAULT_BUTTON_GAP_DP));
+        mainButtonSizePx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_wMainButtonSizeDp, dp2px(context, DEFAULT_BUTTON_MAIN_SIZE_DP));
+        subButtonSizePx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_wSubButtonSizeDp, dp2px(context, DEFAULT_BUTTON_SUB_SIZE_DP));
+        buttonElevationPx = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_wButtonElevation, dp2px(context, DEFAULT_BUTTON_ELEVATION_DP));
         buttonSideMarginPx = buttonElevationPx * 2;
-        mainButtonTextSize = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_aebMainButtonTextSizeSp, sp2px(context, DEFAULT_BUTTON_TEXT_SIZE_SP));
-        subButtonTextSize = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_aebSubButtonTextSizeSp, sp2px(context, DEFAULT_BUTTON_TEXT_SIZE_SP));
-        mainButtonTextColor = ta.getColor(R.styleable.SectorMenuButton_aebMainButtonTextColor, DEFAULT_BUTTON_TEXT_COLOR);
-        subButtonTextColor = ta.getColor(R.styleable.SectorMenuButton_aebSubButtonTextColor, DEFAULT_BUTTON_TEXT_COLOR);
+        mainButtonTextSize = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_wMainButtonTextSizeSp, sp2px(context, DEFAULT_BUTTON_TEXT_SIZE_SP));
+        subButtonTextSize = ta.getDimensionPixelSize(R.styleable.SectorMenuButton_wSubButtonTextSizeSp, sp2px(context, DEFAULT_BUTTON_TEXT_SIZE_SP));
+        mainButtonTextColor = ta.getColor(R.styleable.SectorMenuButton_wMainButtonTextColor, DEFAULT_BUTTON_TEXT_COLOR);
+        subButtonTextColor = ta.getColor(R.styleable.SectorMenuButton_wSubButtonTextColor, DEFAULT_BUTTON_TEXT_COLOR);
 
-        expandAnimDuration = ta.getInteger(R.styleable.SectorMenuButton_aebAnimDurationMillis, DEFAULT_EXPAND_ANIMATE_DURATION);
-        rotateAnimDuration = ta.getInteger(R.styleable.SectorMenuButton_aebMainButtonRotateAnimDurationMillis, DEFAULT_ROTATE_ANIMATE_DURATION);
-        maskBackgroundColor = ta.getInteger(R.styleable.SectorMenuButton_aebMaskBackgroundColor, DEFAULT_MASK_BACKGROUND_COLOR);
-        mainButtonRotateDegree = ta.getInteger(R.styleable.SectorMenuButton_aebMainButtonRotateDegree, mainButtonRotateDegree);
-        isSelectionMode = ta.getBoolean(R.styleable.SectorMenuButton_aebIsSelectionMode, false);
-        rippleEffect = ta.getBoolean(R.styleable.SectorMenuButton_aebRippleEffect, true);
-        rippleColor = ta.getColor(R.styleable.SectorMenuButton_aebRippleColor, rippleColor);
-        blurBackground = ta.getBoolean(R.styleable.SectorMenuButton_aebBlurBackground, false);
-        blurRadius = ta.getFloat(R.styleable.SectorMenuButton_aebBlurRadius, DEFAULT_BLUR_RADIUS);
+        expandAnimDuration = ta.getInteger(R.styleable.SectorMenuButton_wAnimDurationMillis, DEFAULT_EXPAND_ANIMATE_DURATION);
+        rotateAnimDuration = ta.getInteger(R.styleable.SectorMenuButton_wMainButtonRotateAnimDurationMillis, DEFAULT_ROTATE_ANIMATE_DURATION);
+        maskBackgroundColor = ta.getInteger(R.styleable.SectorMenuButton_wMaskBackgroundColor, DEFAULT_MASK_BACKGROUND_COLOR);
+        mainButtonRotateDegree = ta.getInteger(R.styleable.SectorMenuButton_wMainButtonRotateDegree, mainButtonRotateDegree);
+        isSelectionMode = ta.getBoolean(R.styleable.SectorMenuButton_wIsSelectionMode, false);
+        rippleEffect = ta.getBoolean(R.styleable.SectorMenuButton_wRippleEffect, true);
+        rippleColor = ta.getColor(R.styleable.SectorMenuButton_wRippleColor, rippleColor);
+        blurBackground = ta.getBoolean(R.styleable.SectorMenuButton_wBlurBackground, false);
+        blurRadius = ta.getFloat(R.styleable.SectorMenuButton_wBlurRadius, DEFAULT_BLUR_RADIUS);
         ta.recycle();
 
         //模糊处理
